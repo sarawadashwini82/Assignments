@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Website</title>
+  <link rel="stylesheet" href="clgstyle.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="navbar">
+  <div class="logo">CHETANA EDUCATION SOCIETY</div>
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#course-card">Courses</a>
+    <a href="#admin">Admissions</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <h1>The Future Begins Here!</h1>
+    <p>Choose The Field Of Future Study</p>
+
+    <div class="tags">
+      <span>Hospitality</span>
+      <span>Information Technology</span>
+      <span>Business</span>
+      <span>Health & Wellbeing</span>
+      <span>Nursing</span>
+      <span>Software Engineering</span>
+      <span>Management</span>
+      <span>Pharmacy & Medical</span>
+    </div>
+
+    <button class="cta-btn">Explore Now</button>
+  </div>
+
+  <div class="hero-image">
+    <img src="clgphoto.jpg" alt="Students"/>
+  </div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section class="features">
+  <div class="feature">
+    <h3>120+</h3>
+    <p>College Life & Activities</p>
+  </div>
+  <div class="feature">
+    <h3>80+</h3>
+    <p>Certified Teachers</p>
+  </div>
+  <div class="feature">
+    <h3>95%</h3>
+    <p>Career Growth</p>
+  </div>
+  <div class="feature">
+    <h3>200+</h3>
+    <p>Community Members</p>
+  </div>
+</section>
+<section class="courses-section">
+  <h2 class="section-title">Our Courses</h2>
+  <p class="section-subtitle">Choose the right path for your future</p>
+
+  <div class="courses-grid">
+
+    <!-- High School -->
+    <div class="course-card" id="course-card">
+      <div class="course-icon">🎓</div>
+      <h3>High School</h3>
+      <p>
+        Strong academic foundation with focus on core subjects, 
+        personal development, and career guidance.
+      </p>
+      <button>View Details</button>
+    </div>
+
+    <!-- Science -->
+    <div class="course-card">
+      <div class="course-icon">🔬</div>
+      <h3>Science</h3>
+      <p>
+        Comprehensive programs in Physics, Chemistry, Biology & Mathematics 
+        preparing students for professional careers.
+      </p>
+      <button>View Details</button>
+    </div>
+
+    <!-- Commerce -->
+    <div class="course-card">
+      <div class="course-icon">📊</div>
+      <h3>Commerce</h3>
+      <p>
+        Accounting, Economics, and Business Studies focused on 
+        finance, trade, and entrepreneurship.
+      </p>
+      <button>View Details</button>
+    </div>
+
+    <!-- BBA -->
+    <div class="course-card">
+      <div class="course-icon">💼</div>
+      <h3>BBA</h3>
+      <p>
+        Bachelor of Business Administration designed to build leadership, 
+        management, and business decision-making skills.
+      </p>
+      <button>View Details</button>
+    </div>
+
+    <!-- BCA -->
+    <div class="course-card">
+      <div class="course-icon">💻</div>
+      <h3>BCA</h3>
+      <p>
+        Bachelor of Computer Applications focusing on programming, 
+        software development, and IT fundamentals.
+      </p>
+      <button>View Details</button>
+    </div>
+
+    <!-- BCom -->
+    <div class="course-card">
+      <div class="course-icon">📘</div>
+      <h3>BCom</h3>
+      <p>
+        Bachelor of Commerce with specialization in accounting, 
+        finance, taxation, and corporate management.
+      </p>
+      <button>View Details</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="admissions-section" id="admin">
+  <h2 class="section-title">Admissions</h2>
+  <p class="section-subtitle">Start your journey with us</p>
+
+  <div class="admissions-grid">
+
+    <!-- Online Application -->
+    <div class="admission-card">
+      <div class="icon">📝</div>
+      <h3>Online Application</h3>
+      <p>
+        Apply online with our easy and secure application process.
+        Submit your details and documents from anywhere.
+      </p>
+      <button onclick="openModal('applicationModal')">Apply Now</button>
+    </div>
+
+    <!-- Reference -->
+    <div class="admission-card">
+      <div class="icon">🤝</div>
+      <h3>Reference</h3>
+      <p>
+        Get referred by our alumni or faculty members and enjoy
+        faster admission processing.
+      </p>
+      <button onclick="openModal('referenceModal')">Submit Reference</button>
+    </div>
+
+    <!-- Scholarship -->
+    <div class="admission-card">
+      <div class="icon">🎓</div>
+      <h3>Scholarship</h3>
+      <p>
+        Apply for merit-based and need-based scholarships to
+        support your education.
+      </p>
+      <button onclick="openModal('scholarshipModal')">Apply Scholarship</button>
+    </div>
+
+  </div>
+</section>
+<section class="about" id="about">
+  <h2>We Are Here To Turn Your Aspiration Into Reality</h2>
+  <p>
+    We aim to empower students with the knowledge and skills needed 
+    to thrive in a competitive world. Our institution provides a 
+    holistic education that combines academics, innovation, and career development.
+  </p>
+</section>
+
+<!-- ================= MODALS ================= -->
+
+<!-- Online Application Modal -->
+<div class="modal" id="applicationModal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('applicationModal')">&times;</span>
+    <h3>Online Application</h3>
+    <input type="text" placeholder="Full Name">
+    <input type="email" placeholder="Email Address">
+    <input type="text" placeholder="Course Applying For">
+    <button>Submit Application</button>
+  </div>
+</div>
+
+<!-- Reference Modal -->
+<div class="modal" id="referenceModal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('referenceModal')">&times;</span>
+    <h3>Reference Details</h3>
+    <input type="text" placeholder="Student Name">
+    <input type="text" placeholder="Referrer Name">
+    <input type="text" placeholder="Relationship">
+    <button>Submit Reference</button>
+  </div>
+</div>
+
+<!-- Scholarship Modal -->
+<div class="modal" id="scholarshipModal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('scholarshipModal')">&times;</span>
+    <h3>Scholarship Application</h3>
+    <input type="text" placeholder="Student Name">
+    <input type="number" placeholder="Previous Percentage / CGPA">
+    <input type="text" placeholder="Scholarship Type">
+    <button>Apply Scholarship</button>
+  </div>
+</div>
+<section class="contact-section">
+  <!-- ================= HEADER ================= -->
+  <div class="contact-header">
+    <h1>Connect with our experts</h1>
+    <p>
+      Reach out to us for admissions, courses, or any academic guidance.
+      Our team is here to help you.
+    </p>
+  </div>
+
+  <!-- ================= CONTENT ================= -->
+  <div class="contact-container">
+
+    <!-- Contact Form Card -->
+    <div class="contact-form-card" id="contact">
+      <div class="form-header">
+        <span></span><span></span><span></span>
+      </div>
+
+      <form id="contactForm">
+        <label>Name</label>
+        <input type="text" placeholder="Enter your full name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Message</label>
+        <textarea placeholder="Enter your message" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <div class="info-item">
+        <span>📞</span>
+        <p>9876543210</p>
+      </div>
+
+      <div class="info-item">
+        <span>✉️</span>
+        <p>chetanacollege@gmail.com</p>
+      </div>
+
+      <div class="info-item">
+        <span>📍</span>
+        <p>Manas Residency, Darga Road,Vijayapur</p>
+      </div>
+
+      <div class="social-icons">
+        <span>🔗</span>
+        <span>💼</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+<footer class="college-footer">
+  <div class="footer-container">
+
+    <!-- College Info -->
+    <div class="footer-column">
+      <h3>Chetana College</h3>
+      <p>
+        Chetana College is committed to academic excellence and holistic
+        development, preparing students for a successful future.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Admissions</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Admissions -->
+    <div class="footer-column">
+      <h4>Admissions</h4>
+      <ul>
+        <li><a href="#">Online Application</a></li>
+        <li><a href="#">Scholarships</a></li>
+        <li><a href="#">Reference</a></li>
+        <li><a href="#">Eligibility</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-column">
+      <h4>Contact Us</h4>
+      <p>📍 Manas Residency, Darga Road,Vijayapur - 586101</p>
+      <p>📞 +91 9876543210-</p>
+      <p>✉️ info@chetanacollege.edu</p>
+
+      <div class="footer-social">
+        <span>🔗</span>
+        <span>🐦</span>
+        <span>💼</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© 2026 Chetana College. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<script src="contact.js"></script>
+
+
+<script src="admissions.js"></script>
+
+
+<script src="script.js"></script>
+</body>
+</html>
