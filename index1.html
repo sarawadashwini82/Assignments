@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Management Dashboard</title>
+  <link rel="stylesheet" href="css1.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Employee Management System</h2>
+
+    <div class="card">
+      <form id="empForm">
+        <input type="text" id="empId" placeholder="Employee ID">
+        <input type="text" id="name" placeholder="Employee Name">
+        <input type="text" id="dept" placeholder="Department">
+        <input type="email" id="email" placeholder="Email">
+        <input type="text" id="salary" placeholder="Salary">
+
+        <button type="submit">Add Employee</button>
+      </form>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Emp ID</th>
+          <th>Name</th>
+          <th>Department</th>
+          <th>Email</th>
+          <th>Salary</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="empTable"></tbody>
+    </table>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>
